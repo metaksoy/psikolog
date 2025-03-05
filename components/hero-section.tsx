@@ -109,7 +109,7 @@ export default function HeroSection() {
           href="#about"
           className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors"
         >
-          <span className="text-sm mb-2">Aşağı Kaydır</span>
+          <span className="text-sm mb-2 text-center w-full">Aşağı Kaydır</span>
           <ArrowDown className="h-5 w-5" />
         </a>
       </div>
