@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 export const metadata: Metadata = {
   title: "Ruya Yıldırım | Uzm. Kl. Psk.",
   description:
-    "Professional psychologist specializing in child, adolescent and adult therapy with expertise in anxiety, depression, and trauma treatment.",
+    "Çocuk, ergen ve yetişkin terapisinde uzmanlaşmış profesyonel psikolog.",
     generator: 'v0.dev'
 }
 

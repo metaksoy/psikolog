@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button"
 
 export default function SocialButtons() {
   const openWhatsApp = () => {
-    window.open("https://wa.me/5551234567?text=Hello%2C%20I%27d%20like%20to%20schedule%20a%20consultation", "_blank")
+    window.open("https://wa.me/905077737285?text=Hello%2C%20I%27d%20like%20to%20schedule%20a%20consultation", "_blank")
   }
 
   const openInstagram = () => {
-    window.open("https://instagram.com/dr.sarahjohnson", "_blank")
+    window.open("https://www.instagram.com/klinikpsikologruyadilara/", "_blank")
   }
 
   return (

@@ -18,7 +18,7 @@ export default function HeroSection() {
   }, [])
 
   const openWhatsApp = () => {
-    window.open("https://wa.me/5551234567?text=Hello%2C%20I%27d%20like%20to%20schedule%20a%20consultation", "_blank")
+    window.open("https://wa.me/905077737285?text=Hello%2C%20I%27d%20like%20to%20schedule%20a%20consultation", "_blank")
   }
 
   return (
@@ -104,10 +104,10 @@ export default function HeroSection() {
         </div>
       </motion.div>
 
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-10 w-full flex justify-center animate-bounce">
         <a
           href="#about"
-          className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors"
+          className="inline-flex flex-col items-center text-muted-foreground hover:text-primary transition-colors"
         >
           <span className="text-sm mb-2">Aşağı Kaydır</span>
           <ArrowDown className="h-5 w-5" />

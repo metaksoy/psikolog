@@ -44,7 +44,7 @@ ${formState.message}
   }
 
   const openWhatsApp = () => {
-    window.open("https://wa.me/5551234567?text=Merhaba%2C%20randevu%20almak%20istiyorum", "_blank")
+    window.open("https://wa.me/905077737285?text=Merhaba%2C%20randevu%20almak%20istiyorum", "_blank")
   }
 
   return (
@@ -90,7 +90,7 @@ ${formState.message}
                   </div>
                   <div>
                     <h3 className="font-medium text-lg mb-1">Telefon</h3>
-                    <p className="text-muted-foreground">(555) 123-4567</p>
+                    <p className="text-muted-foreground">(507) 123-456</p>
                   </div>
                 </CardContent>
               </Card>
@@ -102,7 +102,7 @@ ${formState.message}
                   </div>
                   <div>
                     <h3 className="font-medium text-lg mb-1">WhatsApp</h3>
-                    <p className="text-muted-foreground">(555) 123-4567</p>
+                    <p className="text-muted-foreground">(507) 123-4567</p>
                     <Button variant="link" className="p-0 h-auto text-primary" onClick={openWhatsApp}>
                       WhatsApp üzerinden mesaj gönder
                     </Button>
