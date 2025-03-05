@@ -9,7 +9,7 @@ export default function SocialButtons() {
   }
 
   const openInstagram = () => {
-    window.open("https://instagram.com/dr.sarahjohnson", "_blank")
+    window.open("https://www.instagram.com/klinikpsikologruyadilara", "_blank")
   }
 
   return (
