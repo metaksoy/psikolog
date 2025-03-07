@@ -6,6 +6,7 @@ import CertificationsSection from "@/components/certifications-section"
 import ContactSection from "@/components/contact-section"
 import ScrollToTopButton from "@/components/scroll-to-top-button"
 import SocialButtons from "@/components/social-buttons"
+import TestimonialsSection from "@/components/testimonials-section"
 
 export const metadata: Metadata = {
   title: "Ruya Yıldırım | Uzm. Kl. Psk.",
@@ -18,6 +19,7 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <HeroSection />
       <AboutSection />
+      <TestimonialsSection />
       <SpecializationsSection />
       <CertificationsSection />
       <ContactSection />

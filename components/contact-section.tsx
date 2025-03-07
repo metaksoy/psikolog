@@ -90,7 +90,7 @@ ${formState.message}
                   </div>
                   <div>
                     <h3 className="font-medium text-lg mb-1">Telefon</h3>
-                    <p className="text-muted-foreground">(507) 123-456</p>
+                    <p className="text-muted-foreground">(507) 773-7285</p>
                   </div>
                 </CardContent>
               </Card>
@@ -102,7 +102,7 @@ ${formState.message}
                   </div>
                   <div>
                     <h3 className="font-medium text-lg mb-1">WhatsApp</h3>
-                    <p className="text-muted-foreground">(507) 123-4567</p>
+                    <p className="text-muted-foreground">(507) 773-7285</p>
                     <Button variant="link" className="p-0 h-auto text-primary" onClick={openWhatsApp}>
                       WhatsApp üzerinden mesaj gönder
                     </Button>

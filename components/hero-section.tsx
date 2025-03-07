@@ -96,7 +96,7 @@ export default function HeroSection() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button size="lg" className="rounded-full" onClick={openWhatsApp}>
-            RANDEVU AL
+            ONLİNE-YÜZ YÜZE RANDEVU AL
           </Button>
           {/* <Button variant="outline" size="lg" className="rounded-full">
             DAHA FAZLASI
