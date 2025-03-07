@@ -14,29 +14,31 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Mehmet S.",
-    text: "Terapiye başlamaya karar verdiğimde en doğru kararı vermişim. Ruya Hanım'ın desteğiyle kaygılarımla başa çıkmayı öğrendim.",
+    name: "Zeynep B.",
+    text: "Çocuğumun yaşadığı zorlukları aşmada bize çok yardımcı oldu. Yavrumun yüzünün güldüğünü gördükçe dua ediyorum.",
   },
   {
     id: 3,
-    name: "Zeynep B.",
-    text: "Çocuğumun yaşadığı zorlukları aşmada bize çok yardımcı oldu. Artık daha mutlu ve özgüvenli bir çocuk.",
+    name: "Hilal H.",
+    text: "Rüya Hanımla bir arkadaşım vasıtası ile tanıştım. aldığım destekten çok memnun kaldım. Empati duygusu çok yüksek, danışanı olarak güven veren bir psikolog. Ben kendi adıma sıkıntımı korkularımı, Rüya hanım sayesinde atlattım. Hayata bambaşka bir pencereden bakmayı öğrendim. Mesleğinde kendini geliştirmiş dolu bir insan olduğunu daha ilk seansta anlıyorsunuz. İyiki Rüya hanımdan destek aldım ve kendisini mesleki bilgisi, insana yaklaşımı, pozitifliği, güler yüzü nedeniyle tüm tedavi almak isteyen Danışanlara şiddetle tavsiye ediyorum. Burdan bir kez daha kendisine çok teşekkür ediyorum",
   },
   {
     id: 4,
-    name: "Can D.",
-    text: "Profesyonel ve anlayışlı yaklaşımı sayesinde zorlu bir dönemden başarıyla çıktım. Kendisine çok teşekkür ederim.",
+    name: "Mehmet S.",
+    text: "Terapiye başlamaya karar verdiğimde en doğru kararı vermişim. Ruya Hanım'ın desteğiyle kaygılarımla başa çıkmayı öğrendim.",
   },
-  {
-    id: 5,
-    name: "Elif T.",
-    text: "Ruya Hanım'ın desteğiyle kendimi daha iyi tanıdım ve güçlü yönlerimi keşfettim. Hayatıma yeni bir bakış açısı kattı.",
-  },
-  {
-    id: 6,
-    name: "Deniz A.",
-    text: "Aile terapisi sürecimizde bize çok yardımcı oldu. İletişimimiz güçlendi ve daha huzurlu bir aile ortamı yakaladık.",
-  }
+
+    {
+        id: 5,
+        name: "Ezgi K.",
+        text: "Rüya Hanımla yaklaşık 1 sene boyunca seanslarımız oldu, gerek bana yaklaşımı gerekse çözüm odaklı ve samimi sohbetiyle beni bu seanslar süresince çok rahatlattı ve geçen sene ile psikoloijik ve ruhen aramdaki farkın çok büyük olduğunu ( iyi anlamda) farkediyorum. kendisine buradan da teşekkür ediyorum ve danışanlarına şunu söylemek istiyorum; Rüya Hanım'a güvenirseniz inanın çoğu şeyi yoluna sokabilirsiniz. Bundan sonraki süreçte de kendisiyle seanslarıma devam etmeyi planlıyorum. Güleryüzü ve samimiyeti ve iş ahlakı için kendisine tekrar teşekkür ediyorum."
+
+    },
+    {
+        id: 6,
+        name: "Merve A.",
+        text: "İnternet aracılığıyla buldum ve çok memnun kaldım. İşinde gayet başarılı dinlemesini bilen zaman doldurmak için değil gerçekten yardımcı olmak için seans yapıyor.Kişisel özellikleri ise güleryüzlü ve içten birisi sizi yargılamadan çözüm odaklı bir şekilde seanslarını gerçekleştiriyor. İyi ki tanışmışım diyorum ve yakın çevreme tavsiye ediyorum Kendisiyle her şeyi rahatlıkla konuşabiliyor olmak ve yargılanmamak beni gerçekten çok rahatlatıyor. Rüya Hanım çok kibar ve güleryüzlü bir insan, bu yüzden seanslardan rahatlamış ve dinlenmiş olarak çıkıyordum. Hiç yargılamadan her detayı ile anlattıklarımı dinlemesi bana kendimi çok özel hissettirdi. Rüya Hanım problemlerimi çözebilecek yeni bakış açıları kazanmama yardımcı oldu. Teşekkür ederim kendisine"       
+    }
 ]
 
 export default function TestimonialsSection() {
