@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export default function SocialButtons() {
   const openWhatsApp = () => {
-    window.open("https://wa.me/905077737285?text=Hello%2C%20I%27d%20like%20to%20schedule%20a%20consultation", "_blank")
+    window.open("https://wa.me/905077737285?text=Merhaba%2C%20Seans%20olu%C5%9Fturmak%20istiyorum.", "_blank")
   }
 
   const openInstagram = () => {
@@ -32,4 +32,3 @@ export default function SocialButtons() {
     </div>
   )
 }
-
