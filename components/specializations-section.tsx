@@ -85,9 +85,13 @@ export default function SpecializationsSection() {
         </motion.div>
 
         <Tabs defaultValue="Yaş Grupları" className="w-full">
-          <TabsList className="grid grid-cols-2 md:grid-cols-4 mb-8">
+          <TabsList className="h-auto flex-wrap gap-2 grid grid-cols-2 md:grid-cols-4 mb-8">
             {specializations.map((category) => (
-              <TabsTrigger key={category.category} value={category.category}>
+              <TabsTrigger 
+                key={category.category} 
+                value={category.category}
+                className="h-auto py-2 px-3 text-sm whitespace-normal text-center"
+              >
                 {category.category}
               </TabsTrigger>
             ))}

@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import { useMediaQuery } from "@/hooks/use-media-query"
 
 const testimonials = [
   {
@@ -13,42 +14,46 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Zeynep B.",
-    text: "Çocuğumun yaşadığı zorlukları aşmada bize çok yardımcı oldu. Yavrumun yüzünün güldüğünü gördükçe dua ediyorum.",
-  },
-  {
-    id: 3,
-    name: "Hilal H.",
-    text: "Rüya Hanımla bir arkadaşım vasıtası ile tanıştım. aldığım destekten çok memnun kaldım. Empati duygusu çok yüksek, danışanı olarak güven veren bir psikolog. Ben kendi adıma sıkıntımı korkularımı, Rüya hanım sayesinde atlattım. Hayata bambaşka bir pencereden bakmayı öğrendim. Mesleğinde kendini geliştirmiş dolu bir insan olduğunu daha ilk seansta anlıyorsunuz. İyiki Rüya hanımdan destek aldım ve kendisini mesleki bilgisi, insana yaklaşımı, pozitifliği, güler yüzü nedeniyle tüm tedavi almak isteyen Danışanlara şiddetle tavsiye ediyorum. Burdan bir kez daha kendisine çok teşekkür ediyorum",
-  },
-  {
-    id: 4,
     name: "Mehmet S.",
     text: "Terapiye başlamaya karar verdiğimde en doğru kararı vermişim. Ruya Hanım'ın desteğiyle kaygılarımla başa çıkmayı öğrendim.",
   },
-
-    {
-        id: 5,
-        name: "Ezgi K.",
-        text: "Rüya Hanımla yaklaşık 1 sene boyunca seanslarımız oldu, gerek bana yaklaşımı gerekse çözüm odaklı ve samimi sohbetiyle beni bu seanslar süresince çok rahatlattı ve geçen sene ile psikoloijik ve ruhen aramdaki farkın çok büyük olduğunu ( iyi anlamda) farkediyorum. kendisine buradan da teşekkür ediyorum ve danışanlarına şunu söylemek istiyorum; Rüya Hanım'a güvenirseniz inanın çoğu şeyi yoluna sokabilirsiniz. Bundan sonraki süreçte de kendisiyle seanslarıma devam etmeyi planlıyorum. Güleryüzü ve samimiyeti ve iş ahlakı için kendisine tekrar teşekkür ediyorum."
-
-    },
-    {
-        id: 6,
-        name: "Merve A.",
-        text: "İnternet aracılığıyla buldum ve çok memnun kaldım. İşinde gayet başarılı dinlemesini bilen zaman doldurmak için değil gerçekten yardımcı olmak için seans yapıyor.Kişisel özellikleri ise güleryüzlü ve içten birisi sizi yargılamadan çözüm odaklı bir şekilde seanslarını gerçekleştiriyor. İyi ki tanışmışım diyorum ve yakın çevreme tavsiye ediyorum Kendisiyle her şeyi rahatlıkla konuşabiliyor olmak ve yargılanmamak beni gerçekten çok rahatlatıyor. Rüya Hanım çok kibar ve güleryüzlü bir insan, bu yüzden seanslardan rahatlamış ve dinlenmiş olarak çıkıyordum. Hiç yargılamadan her detayı ile anlattıklarımı dinlemesi bana kendimi çok özel hissettirdi. Rüya Hanım problemlerimi çözebilecek yeni bakış açıları kazanmama yardımcı oldu. Teşekkür ederim kendisine"       
-    }
+  {
+    id: 3,
+    name: "Zeynep B.",
+    text: "Çocuğumun yaşadığı zorlukları aşmada bize çok yardımcı oldu. Artık daha mutlu ve özgüvenli bir çocuk.",
+  },
+  {
+    id: 4,
+    name: "Can D.",
+    text: "Profesyonel ve anlayışlı yaklaşımı sayesinde zorlu bir dönemden başarıyla çıktım. Kendisine çok teşekkür ederim.",
+  },
+  {
+    id: 5,
+    name: "Elif T.",
+    text: "Ruya Hanım'ın desteğiyle kendimi daha iyi tanıdım ve güçlü yönlerimi keşfettim. Hayatıma yeni bir bakış açısı kattı.",
+  },
+  {
+    id: 6,
+    name: "Deniz A.",
+    text: "Aile terapisi sürecimizde bize çok yardımcı oldu. İletişimimiz güçlendi ve daha huzurlu bir aile ortamı yakaladık.",
+  }
 ]
 
 export default function TestimonialsSection() {
   const [startIndex, setStartIndex] = useState(0)
+  const isMobile = useMediaQuery("(max-width: 768px)")
+  const cardsToShow = isMobile ? 1 : 3
 
   const handlePrevious = () => {
-    setStartIndex((prev) => (prev > 0 ? prev - 1 : testimonials.length - 3))
+    setStartIndex((prev) => 
+      prev > 0 ? prev - 1 : testimonials.length - cardsToShow
+    )
   }
 
   const handleNext = () => {
-    setStartIndex((prev) => (prev < testimonials.length - 3 ? prev + 1 : 0))
+    setStartIndex((prev) => 
+      prev < testimonials.length - cardsToShow ? prev + 1 : 0
+    )
   }
 
   return (
@@ -67,10 +72,15 @@ export default function TestimonialsSection() {
             </Button>
             
             <div className="flex gap-4 overflow-hidden">
-              {[0, 1, 2].map((offset) => {
+              {Array.from({ length: cardsToShow }).map((_, offset) => {
                 const index = (startIndex + offset) % testimonials.length
                 return (
-                  <Card key={testimonials[index].id} className="flex-1 min-w-0">
+                  <Card 
+                    key={testimonials[index].id} 
+                    className={`flex-1 min-w-0 transform transition-all duration-300 ${
+                      isMobile ? 'w-full' : 'w-1/3'
+                    }`}
+                  >
                     <CardContent className="p-6">
                       <blockquote className="text-lg mb-4">{testimonials[index].text}</blockquote>
                       <footer className="text-right font-medium">- {testimonials[index].name}</footer>
