@@ -29,13 +29,13 @@ export default function HeroSection() {
         }`}
       >
         <div className="container flex items-center justify-between">
-          <h1
+          <a href="https://pskruyadilara.vercel.app/#iletisim"
             className={`font-serif text-xl md:text-2xl font-bold transition-all duration-300 ${
               scrolled ? "text-primary" : "text-primary"
             }`}
           >
            Ruya Dilara YILDIRIM
-          </h1>
+          </a>
           <nav className="hidden md:flex items-center space-x-6">
             <a href="#hakkimda" className="text-muted-foreground hover:text-primary transition-colors">
               Hakkımda
