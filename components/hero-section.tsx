@@ -37,16 +37,16 @@ export default function HeroSection() {
            Ruya Dilara YILDIRIM
           </h1>
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="#hakkimda" className="text-muted-foreground hover:text-primary transition-colors">
               Hakkımda
             </a>
-            <a href="#specializations" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="#uzmanliklar" className="text-muted-foreground hover:text-primary transition-colors">
               Uzmanlık Alanları
             </a>
-            <a href="#certifications" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="#sertifikalar" className="text-muted-foreground hover:text-primary transition-colors">
               Sertifikalar
             </a>
-            <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="#iletisim" className="text-muted-foreground hover:text-primary transition-colors">
               İletişim
             </a>
           </nav>
@@ -106,7 +106,7 @@ export default function HeroSection() {
 
       <div className="absolute bottom-10 w-full flex justify-center animate-bounce">
         <a
-          href="#about"
+          href="#hakkimda"
           className="inline-flex flex-col items-center text-muted-foreground hover:text-primary transition-colors"
         >
           <span className="text-sm mb-2">Aşağı Kaydır</span>
