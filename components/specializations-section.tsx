@@ -28,7 +28,7 @@ export default function SpecializationsSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
-  const specializations = [
+  const uzmanliklar = [
     {
       category: "Yaş Grupları",
       items: [
@@ -69,7 +69,7 @@ export default function SpecializationsSection() {
   ]
 
   return (
-    <section id="specializations" className="py-20 md:py-32 bg-muted/30 relative overflow-hidden">
+    <section id="uzmanliklar" className="py-20 md:py-32 bg-muted/30 relative overflow-hidden">
       <div className="container px-4 md:px-6">
         <motion.div
           ref={ref}
@@ -86,7 +86,7 @@ export default function SpecializationsSection() {
 
         <Tabs defaultValue="Yaş Grupları" className="w-full">
           <TabsList className="h-auto flex-wrap gap-2 grid grid-cols-2 md:grid-cols-4 mb-8">
-            {specializations.map((category) => (
+            {uzmanliklar.map((category) => (
               <TabsTrigger 
                 key={category.category} 
                 value={category.category}
@@ -97,7 +97,7 @@ export default function SpecializationsSection() {
             ))}
           </TabsList>
 
-          {specializations.map((category) => (
+          {uzmanliklar.map((category) => (
             <TabsContent key={category.category} value={category.category} className="mt-0">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {category.items.map((item, index) => (
