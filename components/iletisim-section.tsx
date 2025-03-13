@@ -48,7 +48,7 @@ ${formState.message}
   }
 
   return (
-    <section id="contact" className="py-20 md:py-32 bg-muted/30 relative overflow-hidden">
+    <section id="iletisim" className="py-20 md:py-32 bg-muted/30 relative overflow-hidden">
       <div className="container px-4 md:px-6">
         <motion.div
           ref={ref}

@@ -10,7 +10,7 @@ export default function AboutSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="about" className="py-20 md:py-32 bg-background relative overflow-hidden">
+    <section id="hakkimda" className="py-20 md:py-32 bg-background relative overflow-hidden">
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div

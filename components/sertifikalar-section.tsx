@@ -9,7 +9,7 @@ export default function CertificationsSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
-  const certifications = [
+  const sertifikalar = [
     {
       category: "Psikoterapi Eğitimleri",
       items: [
@@ -70,7 +70,7 @@ export default function CertificationsSection() {
   ]
 
   return (
-    <section id="certifications" className="py-20 md:py-32 bg-background relative overflow-hidden">
+    <section id="sertifikalar" className="py-20 md:py-32 bg-background relative overflow-hidden">
       <div className="container px-4 md:px-6">
         <motion.div
           ref={ref}
@@ -85,7 +85,7 @@ export default function CertificationsSection() {
           </p>
         </motion.div>
 
-        {certifications.map((category, categoryIndex) => (
+        {sertifikalar.map((category, categoryIndex) => (
           <div key={category.category} className="mb-12">
             <h3 className="text-2xl font-bold mb-6 font-serif">{category.category}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
