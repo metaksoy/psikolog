@@ -29,7 +29,7 @@ export default function HeroSection() {
         }`}
       >
         <div className="container flex items-center justify-between">
-          <a href="https://pskruyadilara.vercel.app/#iletisim"
+          <a href="/"
             className={`font-serif text-xl md:text-2xl font-bold transition-all duration-300 ${
               scrolled ? "text-primary" : "text-primary"
             }`}
