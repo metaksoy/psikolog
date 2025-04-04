@@ -7,6 +7,7 @@ import ContactSection from "@/components/iletisim-section"
 import ScrollToTopButton from "@/components/scroll-to-top-button"
 import SocialButtons from "@/components/social-buttons"
 import TestimonialsSection from "@/components/testimonials-section"
+import InstagramFeed from "@/components/instagram-feed"
 
 export const metadata: Metadata = {
   title: "Ruya Yıldırım | Uzm. Kl. Psk.",
@@ -22,6 +23,7 @@ export default function Home() {
       <TestimonialsSection />
       <SpecializationsSection />
       <CertificationsSection />
+      <InstagramFeed />
       <ContactSection />
       <ScrollToTopButton />
       <SocialButtons />
